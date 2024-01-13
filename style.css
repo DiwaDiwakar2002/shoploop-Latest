@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&family=Sofia+Sans+Condensed:ital,wght@0,1;0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,1;1,100;1,200;1,500;1,800&family=Teko:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --priColor: white;
+    --secColor: black;
+}
+
+.darkMode{
+    --priColor: black;
+    --secColor: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    color: var(--secColor) !important;
+    background-color: var(--priColor);
+}
+
+/* navbar */
+.navbar {
+    width: 70vw;
+    margin: 20px auto;
+    background-color: var(--priColor);
+    border-radius: 5px;
+
+}
+
+@media screen and (max-width:426px) {
+    .navbar {
+        width: 100vw;
+        margin: 20px auto;
+    }
+
+    .indexHead h1{
+        margin-top: 37vh;
+        font-size: 100%;
+    }
+
+    .contactLeft a{
+        font-size: 20px;
+    }
+}
+
+.navbar a{
+    color: var(--secColor);
+    font-weight: 500;
+    font-size: 20px;
+    transition: 0.3s;
+    margin: 0 20px;
+
+}
+
+.navbar a:hover{
+    color: var(--secColor);
+    border-bottom: 1px solid var(--secColor);
+    transform: translateY(-3px);
+    transition: 0.3s;
+}
+
+.fa-bars{
+    color: var(--secColor);
+}
+
+
+
+/* hero */
+#heroSection{
+    height: 100vh;
+    z-index: -1;
+    margin-top: 50px;
+}
+
+.btnPro{
+    background-color: var(--secColor);
+    color: var(--priColor);
+}
+
+.btnPro:hover{
+    border: 1px solid white;
+    color: var(--secColor);
+
+}
+
+.btnAbt{
+    border: 1px solid white;
+    color: var(--secColor);
+}
+
+.btnAbt:hover{
+    background-color: var(--secColor);
+    color: var(--priColor);
+}
+
+.indexHead h1{
+    color: var(--secColor) !important;
+    font-weight: 900;
+    font-family: 'Gabarito', cursive;
+    text-transform: uppercase;
+    font-size: 300%;
+}
+/* sample */
+
+.sampleSec{
+    margin-top: 100vh;
+}
+.sampleSec div{
+    width: 50vw;
+    padding: 0;
+}
+
+.sampleSec img{
+    width: 100%;
+}
+
+/* see more sec */
+
+#seeMore{
+    height: 100vh;
+    background-color: var(--priColor);
+    z-index: -1;
+}
+
+#seeMore a{
+    text-decoration: none;
+    color: var(--secColor);
+}
+
+/* Product page */
+
+.productBody{
+    background-position: center;
+    background-size: cover;
+}
+.cardDiv{
+    width: 300px;
+    color: var(--secColor);
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+
+.cardDiv:hover{
+    border: 1px solid var(--secColor);
+    
+}
+
+.cardDiv h2{
+    font-size: 100%;
+    margin: 10px 0;
+    border-bottom: 1px solid var(--secColor);
+    padding-bottom: 10px;
+    font-weight: 300;
+}
+
+.cardDiv h1{
+    font-weight: 700;
+}
+
+.cardDiv img{
+    width: 100%;
+    transition: .3s;
+}
+
+.imgDiv{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: .5s;
+
+}
+
+.imgDiv:hover{
+    border-radius: 0px;
+    transition: .5s;
+
+}
+.imgDiv img:hover{
+    transform: scale(1.2);
+    filter: contrast(1.1);
+    transition: .5s;
+}
+
+#productSec{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* about */
+.aboutHead{
+    height: 100vh;
+    z-index: -1;
+}
+
+.aboutHead h1{
+    font-size: 20vw;
+    font-family: 'Teko', sans-serif;
+}
+
+.aboutContent{
+    background-color: var(--secColor);
+    width: 100vw;
+    color: var(--priColor);
+    margin-top: 100vh;
+}
+
+.aboutH1{
+    font-size: 100px;
+}
+
+.aboutContent h1{
+    color: var(--priColor) !important;
+}
+
+.btnPro2{
+    background-color: var(--priColor);
+    color: var(--secColor);
+}
+
+.btnPro2:hover{
+    color: var(--priColor);
+    border: 1px solid var(--priColor);
+}
+
+.btnCon{
+    color: var(--priColor);
+    border: 1px solid var(--priColor);
+}
+
+.btnCon:hover{
+    background-color: var(--priColor);
+    color: var(--secColor);
+}
+
+/* contact */
+.footer{
+    margin-top: 100vh;
+    background-color: var(--secColor);
+    width: 100vw;
+    color: var(--priColor);
+    font-size: 25px;
+}
+
+footer h1{
+    font-size: 70px;
+    text-transform: uppercase;
+}
+
+footer p{
+    margin: 0;
+}
+
+.contactSection{
+    width: 100vw;
+    line-height: 2;
+    background-color: var(--secColor);
+}
+.contactSection i{
+    font-size: 25px;
+    margin: 10px;
+    
+
+}
+.contactSection a{
+    text-decoration: none;
+    color: var(--priColor);
+}
+.contactSection input{
+    background-color: var(--priColor);
+    border-radius: 5px;
+    border: none;
+    height:50px;
+    color: var(--secColor);
+    outline: none;
+    margin: 15px;
+    padding-left: 20px;
+}
+.contactSection input::placeholder{
+    color: rgb(75, 75, 75);
+    font-weight: 200;
+}
+.contactSection button{
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 0;
+    color: var(--priColor);
+}
+.contactLeft{
+    border-right: 3px solid var(--priColor);
+}
+
+.contactLeft a{
+    font-size: 28px;
+    margin: 20px 0;
+}
+
+.contactLeft a:hover{
+    color: var(--priColor);
+    border-bottom: 1px solid var(--priColor);
+    transform: translateY(-3px);
+    transition: 0.3s;
+}
+
+.contactBody{
+    height: 100vh;
+}
+
+.btnSub{
+    border: 1px solid var(--priColor) !important;
+    border-radius: 5px !important;
+    font-size: 20px !important;
+}
+
+.btnSub:hover{
+    background-color: var(--priColor);
+    color: var(--secColor);
+}
+
+/* span */
